@@ -1,0 +1,80 @@
+211: fundemental of JS
+variables
+contionals (if statements)
+Loops
+functions and callbacks
+arrays
+object Literals
+
+311 APIS
+what are APIS, REST endpoints (VERB + ROUTE)
+Veros:
+GET - get data/resources
+POST - create data/resouce/ something new
+PUT - update data/resource
+DELETE -  delete data/resource
+
+Pass data from the client to the server on the request
+   - query params
+   - path params
+   - request body (only POST, PUT have a request body)
+
+Express is the framework/libaries/modules that we are using
+to build our backend api server
+    - Router module/concept: define our routes
+    - Controllers are how we handle the routes
+    - static concept/module is how we can handle static resources
+    - we can define our modules (js files), we can use "module. exports", to make it available
+    - dependency injection using "require" keyword/function
+
+We used Postman to simulate/test requests to the backend
+
+
+SQL
+
+- we talked a bit about hosting our DataBase in the cloud
+   - AWS
+   - difference between Managed vs Not Managed
+
+- Relation Database Management System (RDMS)
+- MySQL is the RDMS we are practicing with
+- we are using SOL to interact with MySQL, SQL is pretty generic.
+- TABLES, ROWS and COLUMNS
+
+- create a table
+- drop a table
+
+how to do CRUD in SOL
+
+- insert row into table
+- select row from table
+- delete row from table
+- update row in table
+
+structure of select statement:
+
+- select
+- from
+- where
+- group Dy
+- having
+- order by
+- Limit
+- offset
+
+- how to do CRUD in SQL
+
+- how to query more than one table at a time (joins)
+- primary keys
+- foreign keys
+- data-model, the structure of your data to support you applicatin
+
+
+- difference between dropping a table and deleting all rows
+
+
+Whats Next:
+
+- connect express and sal
+- authentication, login/logout, user managements
+- deployment
