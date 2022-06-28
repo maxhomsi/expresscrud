@@ -6,7 +6,6 @@ let dotenv = require("dotenv");
 dotenv.config();
 
 
-
 // get the app servers port from env, fallback on port 8000 if not configured
 const PORT = process.env.PORT || 8000; 
 
@@ -22,6 +21,10 @@ app.use(express.static("./static"));
 const todoRoutes = require("./routes/todosRoutes"); //chama para poder usar
 // tell the express app to use the routes
 app.use(todoRoutes);
+
+let userRoutes = require("./routes/userRoutes")
+app.use(userRoutes);
+
 
 
 // start the express app and log what port i am on

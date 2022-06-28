@@ -1,7 +1,7 @@
 const express = require("express"); //usa o express
 let router = new express.Router() //informa que o router
 let controller = require("../controllers/todosCtrl"); //utilizar para usar o controllers
-
+let auth = require("../middleware/auth") //chamar para usar a autentificacao
 //informar o que vai ser ativado e onde eh
 
 
@@ -10,7 +10,8 @@ let controller = require("../controllers/todosCtrl"); //utilizar para usar o con
 router.get("/todos", controller.itemsSummary);
 
 // get detail of a single item, given its id
-router.get("/todos/:id", controller.itemDetails);
+router.get("/todos/:id", auth.verifyJWT, controller.itemDetails); 
+//coloquei o comando auth.verify para chamar o prompt de usario e senha
 
 // create a new item
 router.post("/todos", controller.createItem);
